@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ResetPasswordPage } from '../pages/access/ResetPasswordPage';
 import { SignInPage } from '../pages/access/SignInPage';
 import { SignUpPage } from '../pages/access/SignUpPage';
+import { BlankPage } from '../pages/blank/BlankPage';
 import { DashboadPage } from '../pages/dashboard/DashboadPage';
 import { DashboadWrapperPage } from '../pages/dashboard/DashboadWrapperPage';
 import { JournalPage } from '../pages/journal/JournalPage';
@@ -25,6 +26,7 @@ export const AppRouter = () => {
 					<Route path='journal/:id' element={<JournalSinglePage />} />
 					<Route path='todos' element={<TodosPage />} />
 				</Route>
+				<Route path='blank' element={<BlankPage />} />
 				<Route path='*' element={<NotFoundPages />} />
 			</Routes>
 		</BrowserRouter>
